@@ -1,0 +1,186 @@
+@font-face {
+    font-family:'Aestetico Informal';
+    src: url(lib_fonts\Aestetico_Informal_Regular.otf);
+}
+
+:root {
+
+    /* Colors: */
+    --naranja: #E2665C;
+    --negro: #000000;
+    --blanco: #FFFFFF;
+    --blanco50: rgba(255, 255, 255, 0.5);
+    --blanco80: rgba(255, 255, 255, 0.8);
+    
+    /* Font/text values */
+    --unnamed-font-family-ibm-plex-sans:'IBM Plex Sans', sans-serif;
+    --unnamed-font-family-aestetico-informal:'Aestetico Informal';
+    --unnamed-font-style-italic: italic;
+    --unnamed-font-style-normal: normal;
+    --unnamed-font-style-bold: bold;
+    --unnamed-font-weight-300: 300px;
+    --unnamed-font-weight-600: 600px;
+    --unnamed-font-weight-800: 800px;
+    --unnamed-font-weight-bold: bold;
+    --unnamed-font-size-13: 13px;
+    --unnamed-font-size-18: 18px;
+    --unnamed-font-size-20: 20px;
+    --unnamed-font-size-22: 22px;
+    --unnamed-font-size-25: 25px;
+    --unnamed-font-size-40: 40px;
+    --unnamed-font-size-120: 120px;
+    --unnamed-character-spacing-0: 0px;
+    
+    }
+    
+.flex-container {
+    
+    display: flex; 
+    flex-wrap: wrap; 
+}
+.izquierda {
+
+    flex: 1;
+    margin-left: 10%;
+    margin-right: 5%;
+    padding: 30px 40px 40px 40px;
+    background-color: none;
+    width: 672px;;
+    min-width: 500px;
+    max-width: 672px;
+    margin-top: 3%;
+    
+        
+}
+.derecha {
+
+    flex:2;
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 30px 40px 40px 40px;
+    background-color: var(--blanco80);
+    border-radius: 10px;
+    left:35%;
+    max-width: 672px;;
+    min-width: 300px;
+    min-height: 500px;
+   
+}
+  
+/* Atributos Titulo Principal: */
+
+    #logo_titulo {
+        
+        top:150px;
+        left:55px;
+        margin:auto;
+        max-width: 400px;
+        transition: 1.0s;
+        
+    }
+     
+    #transforma {
+        font-family: var(--unnamed-font-family-aestetico-informal);
+        font-style: var(--unnamed-font-style-normal);
+        font-weight: var(--unnamed-font-weight-bold);
+        font-size: var(--unnamed-font-size-40);
+        line-height: 0px;
+        letter-spacing: var(--unnamed-character-spacing-0);
+        color: var(--negro);
+        transition: 1.0s;
+        padding-left: 350px;
+        }
+    #Medellin {
+        padding-left: 200px;
+        font-family: var(--unnamed-font-family-aestetico-informal);
+        font-style: var(--unnamed-font-style-normal);
+        font-weight: var(--unnamed-font-weight-bold);
+        font-size: var(--unnamed-font-size-120);
+        line-height: 150px;
+        letter-spacing: var(--unnamed-character-spacing-0);
+        color: var(--negro);
+        transition: 1.5s
+        }
+    
+   
+   
+/* Atributos Formulario */
+
+
+    #invitacion {
+    font-family: var(--unnamed-font-family-ibm-plex-sans);
+    font-style: var(--unnamed-font-style-italic);
+    font-weight: var(--unnamed-font-weight-600);
+    font-size: var(--unnamed-font-size-18);
+    line-height: 25px;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--naranja);
+    align-content: flex-end;
+    background-color: var(--blanco50)
+    
+    
+}
+
+    .formulario_registro{
+        min-width: 100%;
+        transition: 1.0s;
+    }
+
+    .dato_registro{
+        background: none;
+        color: var(--negro);
+        font-family: var(--unnamed-font-family-ibm-plex-sans);
+        font-style: var(--unnamed-font-style-bold);
+        font-weight: var(--unnamed-font-weight-bold);
+        font-size: var(--unnamed-font-size-22);
+        padding:10px 10px 0px 0px;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid var(--naranja)
+    }
+
+    .dato_registro:focus {
+        outline: none;
+        color: var(--negro);
+        }
+
+    .label_form {
+        padding-bottom: 10px;
+        font-family: var(--unnamed-font-family-ibm-plex-sans);
+        font-style: var(--unnamed-font-style-italic);
+        font-weight: var(--unnamed-font-weight-300);
+        font-size: var(--unnamed-font-size-18);
+        line-height: var(--unnamed-line-spacing-19);
+        letter-spacing: var(--unnamed-character-spacing-0);
+        color: var(--naranja);  
+    }
+
+    .Boton_Registrarme {
+        background-color: var(--naranja);
+        font-family: var(--unnamed-font-family-aestetico-informal);
+        font-weight: var(--unnamed-font-weight-bold);
+        font-size: var(--unnamed-font-size-20);
+        line-height: var(--unnamed-line-spacing-29);
+        letter-spacing: var(--unnamed-character-spacing-0);
+        color: var(--blanco);
+        padding: 10px 10px 10px 10px;
+        width: 80%;
+        border: none;
+        border-radius: 30px;
+        margin-top: 5%;
+        margin-left: 10%;
+        cursor: pointer;
+     }
+
+
+
+
+    
+
+
+    
+
+  
+
+   
