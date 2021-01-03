@@ -16,45 +16,32 @@
     --fuenteParrafos:'IBM Plex Sans', sans-serif;
     --fuenteTitulos:'Aestetico Informal';
 
-     /* Dimensions */
+    /* Dimensions */
 
     --anchoMaxCajaMensajePrincipal: 700px;
+    --anchoMinCajaMensajePrincipal: 500px;
+    --anchoMaxCajaFormulario: 700px;
+    --anchoMinCajaFormulario: 500px;
             
-    }
+      }
     
-.contenidoLandingPage {
-    
+/* Contenido Responsive */
+
+.contenidoLandingPage {    
     display: flex; 
     flex-wrap: wrap; 
-}
+    }
 
-/* Atributos cajas de información */
+/* Elementos de mensaje principal */
 
 .cajaMensajePrincipal {
-
     flex: 1;
     margin: 3% 10% 0% 10%;
     min-width: 400px;
     padding: 30px 40px 40px 40px;
     max-width: var(--anchoMaxCajaMensajePrincipal);
-    
-                  
-}
-
-.cajaFormularioRegistro {
-
-    flex:2;
-    background-color: var(--blanco80);
-    border-radius: 10px;
-    left:35%;
-    margin: 3% 5% 0% 5%;
-    min-width: 400px;
-    min-height: 500px;
-    padding: 30px 40px 40px 40px;
-      
-}
-  
-/* Atributos Titulo Principal: */
+    min-width: var(--anchoMinCajaMensajePrincipal);                 
+    }
 
     #logoTituloLanding {
         top:150px;
@@ -69,15 +56,14 @@
         font-size: 60px;
         font-weight: bold;
         color: var(--negro);    
-        line-height: 20px;
+        line-height: 10px;
         transition: 1.0s;
         padding: 0% 20% 0% 0%;
         text-align-last: center;
-        max-width: var(--anchoMaxCajaMensajePrincipal)
+        max-width: var(--anchoMaxCajaMensajePrincipal);
         }
 
-    #dondeAccion {
-        
+    #dondeAccion {        
         font-family: var(--fuenteTitulos);     
         font-size: 100px;
         font-weight: bold;
@@ -87,59 +73,69 @@
         transition: 1.5s;
         left: 200px;   
         text-align-last: center;
-        max-width: var(--anchoMaxCajaMensajePrincipal)
+        max-width: var(--anchoMaxCajaMensajePrincipal);
         }
     
    
    
-/* Atributos Formulario */
+/* Elementos de Formulario de Registro */
 
+.cajaFormularioRegistro {
+    flex:2;
+    background-color: var(--blanco80);
+    border-radius: 10px;
+    margin: 3% 5% 0% 5%;
+    min-width: var(--anchoMinCajaFormulario);
+    min-height: 500px;
+    padding: 30px 40px 40px 40px;
+    transition: 1.5s
+    }
 
-    #ExplicacionPorQueRegistrarse {
+    #ExplicacionPorQueRegistrarse{
         font-family: var(--fuenteParrafos);
         font-style: italic;
         font-weight: 600px;
-        font-size: 18px;
-        line-height: 25px;
+        font-size: 25px;
+        line-height: 30px;
         color: var(--naranja);
         align-content: flex-end;
-        background-color: var(--blanco50)
+        background-color: var(--blanco50);
+        padding: 0px 0px 40px 0px;
         }
 
-    .formularioRegistro{
+    .formularioRegistro{        
         min-width: 100%;
         transition: 1.0s;
         }
 
-    .dato_registro{
+    .casillaDatoUsuario{
         background: none;
         color: var(--negro);
         font-family: var(--fuenteParrafos);
-        font-style: bold;
         font-weight: bold;
         font-size: 22px;
         padding:10px 10px 0px 0px;
-        width: 100%;
+        width: 100%;       
         border: none;
         border-bottom: 1px solid var(--naranja)
         }
 
-    .dato_registro:focus {
+    .casillaDatoUsuario:focus{
         outline: none;
         color: var(--negro);
         }
 
-    .label_form {
-        padding-bottom: 10px;
+    .labelFormulario {
+        padding: 0px 0px 15px 0px;
         font-family: var(--fuenteParrafos);
         font-style: italic;
-        font-weight: 300px;
-        font-size: 18px;
-        line-height: 19px;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 30px;
         color: var(--naranja);  
         }
 
-    .Boton_Registrarme {
+    .BotonEnvioDatosRegistro{
         background-color: var(--naranja);
         font-family: var(--fuenteTitulos);
         font-weight: bold;
