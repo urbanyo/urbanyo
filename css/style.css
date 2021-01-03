@@ -6,11 +6,14 @@
 :root {
 
     /* Colors: */
-    --naranja: #E2665C;
-    --negro: #000000;
-    --blanco: #FFFFFF;
     --blanco50: rgba(255, 255, 255, 0.5);
     --blanco80: rgba(255, 255, 255, 0.8);
+    --naranja: rgb(226, 102, 92);
+    --naranja50: rgb(226, 102, 92, 0.5);
+    --negro: rgb(0, 0, 0);
+    --blanco: rgb(255, 255, 255);
+    
+    
     
     /* Font/text values */
     --fuenteParrafos:'IBM Plex Sans', sans-serif;
@@ -20,8 +23,8 @@
 
     --anchoMaxCajaMensajePrincipal: 700px;
     --anchoMinCajaMensajePrincipal: 400px;
-    --anchoMaxCajaFormulario: 700px;
-    --anchoMinCajaFormulario: 400px;
+    --anchoMaxCajaFormulario: 600px;
+    --anchoMinCajaFormulario: 300px;
             
       }
     
@@ -47,7 +50,7 @@
         top:150px;
         left:55px;
         max-width: var(--anchoMaxCajaMensajePrincipal);
-        transition: 1.0s;   
+        /*transition: 1.0s; */  
         align-items: center;     
         }
      
@@ -57,9 +60,8 @@
         font-weight: bold;
         color: var(--negro);    
         line-height: 10px;
-        transition: 1.0s;
-        padding: 0% 20% 0% 0%;
-        text-align-last: center;
+        /*transition: 1.0s;*/
+        padding: 0% 0% 0% 10%;
         max-width: var(--anchoMaxCajaMensajePrincipal);
         }
 
@@ -70,13 +72,11 @@
         color: var(--negro);
         letter-spacing:-5px;
         line-height: 100px;
-        transition: 1.5s;
+        /*transition: 1.5s;*/
         left: 200px;   
         text-align-last: center;
         max-width: var(--anchoMaxCajaMensajePrincipal);
         }
-    
-   
    
 /* Elementos de Formulario de Registro */
 
@@ -84,24 +84,24 @@
     flex:2;
     background-color: var(--blanco80);
     border-radius: 10px;
-    margin: 3% 8% 0% 8%;
+    margin: 3% 10% 0% 10%;
     max-width: var(--anchoMaxCajaFormulario);
     min-width: var(--anchoMinCajaFormulario);
     min-height: 500px;
-    padding: 30px 40px 40px 40px;
-    transition: 1.5s
+    padding: 30px 60px 30px 60px;
+    /*transition: 1.5s*/
     }
 
     #ExplicacionPorQueRegistrarse{
         font-family: var(--fuenteParrafos);
         font-style: italic;
-        font-weight: 600px;
-        font-size: 25px;
+        font-size: 28px;
         line-height: 30px;
         color: var(--naranja);
-        align-content: flex-end;
-        background-color: var(--blanco50);
-        padding: 0px 0px 40px 0px;
+        /*align-content: flex-start;*/
+        /*background-color: var(--blanco50);*/
+        padding: 0px 0px 30px 0px;
+        max-height: 100px;
         }
 
     .formularioRegistro{        
@@ -110,7 +110,7 @@
         }
 
     .casillaDatoUsuario{
-        background: none;
+        background: var(--naranja50);
         color: var(--negro);
         font-family: var(--fuenteParrafos);
         font-weight: bold;
@@ -127,7 +127,7 @@
         }
 
     .labelFormulario {
-        padding: 0px 0px 15px 0px;
+        padding: 20px 0px 15px 0px;
         font-family: var(--fuenteParrafos);
         font-style: italic;
         font-weight: bold;
