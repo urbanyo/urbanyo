@@ -1,10 +1,10 @@
 #imagenes
-*.jpg
-*.svg
-*.png
-*.ico
+#*.jpg
+#*.svg
+#*.png
+#*.ico
 
 #fuentes
-*.otf
-*.ttf
+#*.otf
+#*.ttf
 

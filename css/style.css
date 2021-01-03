@@ -15,7 +15,11 @@
     /* Font/text values */
     --fuenteParrafos:'IBM Plex Sans', sans-serif;
     --fuenteTitulos:'Aestetico Informal';
-        
+
+     /* Dimensions */
+
+    --anchoMaxCajaMensajePrincipal: 700px;
+            
     }
     
 .contenidoLandingPage {
@@ -26,26 +30,25 @@
 
 /* Atributos cajas de información */
 
-.cajonIzquierdo {
+.cajaMensajePrincipal {
 
     flex: 1;
     margin: 3% 10% 0% 10%;
-    min-width: 500px;
-    max-width: 80%;
+    min-width: 400px;
     padding: 30px 40px 40px 40px;
-    width: 672px;;
+    max-width: var(--anchoMaxCajaMensajePrincipal);
+    
                   
 }
 
-.cajonDerecho {
+.cajaFormularioRegistro {
 
+    flex:2;
     background-color: var(--blanco80);
     border-radius: 10px;
-    flex:2;
     left:35%;
     margin: 3% 10% 0% 10%;
-    max-width: 672px;;
-    min-width: 300px;
+    min-width: 400px;
     min-height: 500px;
     padding: 30px 40px 40px 40px;
       
@@ -56,32 +59,35 @@
     #logoTituloLanding {
         top:150px;
         left:55px;
-        max-width: 400px;
-        transition: 1.0s;        
+        max-width: var(--anchoMaxCajaMensajePrincipal);
+        transition: 1.0s;   
+        align-items: center;     
         }
      
     #accion {
-        text-align: left;
         font-family: var(--fuenteTitulos);
-        font-weight: bold;
         font-size: 60px;
-        color: var(--negro);
+        font-weight: bold;
+        color: var(--negro);    
         line-height: 50px;
         transition: 1.0s;
-        top: -5px;
+        padding: 0% 0% 0% 0%;
+        text-align-last: center;
+        max-width: var(--anchoMaxCajaMensajePrincipal)
         }
 
     #donde {
         
         font-family: var(--fuenteTitulos);     
-        font-size: 120px;
+        font-size: 100px;
         font-weight: bold;
+        color: var(--negro);
         letter-spacing:-5px;
         line-height: 100px;
-        color: var(--negro);
         transition: 1.5s;
-        text-align: right;
-        top: -5px;
+        left: 200px;   
+        text-align-last: center;
+        max-width: var(--anchoMaxCajaMensajePrincipal)
         }
     
    
