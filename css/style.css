@@ -44,14 +44,15 @@
 .cajonIzquierdo {
 
     flex: 1;
+    margin-top: 3%;
     margin-left: 10%;
-    margin-right: 5%;
+    margin-right: 0%;
     padding: 30px 40px 40px 40px;
     background-color: none;
     width: 672px;;
     min-width: 500px;
     max-width: 672px;
-    margin-top: 3%;
+    
             
 }
 
@@ -65,8 +66,8 @@
     background-color: var(--blanco80);
     border-radius: 10px;
     left:35%;
-    max-width: 672px;;
     min-width: 300px;
+    max-width: 672px;;
     min-height: 500px;
    
 }
@@ -81,7 +82,7 @@
         transition: 1.0s;        
         }
      
-    #palabraTransforma {
+    #accion {
         font-family: var(--unnamed-font-family-aestetico-informal);
         font-style: var(--unnamed-font-style-normal);
         font-weight: var(--unnamed-font-weight-bold);
@@ -93,8 +94,9 @@
         padding-left: 350px;
         }
 
-    #palabraMedellin {
-        padding-left: 200px;
+    #donde {
+        
+        text-align: right;
         font-family: var(--unnamed-font-family-aestetico-informal);
         font-style: var(--unnamed-font-style-normal);
         font-weight: var(--unnamed-font-weight-bold);
