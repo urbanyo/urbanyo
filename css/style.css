@@ -62,7 +62,7 @@
     font-family: var(--fuenteParrafos);
     font-style: italic;
     background-color: var(--blanco80);
-    margin: 3% 10% 0% 10%;
+    margin: auto;
     max-width: var(--anchoMaxCajaFormulario);
     min-width: var(--anchoMinCajaFormulario);
     min-height: 500px;
@@ -81,6 +81,7 @@
         color: var(--naranja);
         padding: 0px 0px 30px 0px;
         max-height: 150px;
+        justify-content: center;
         }  
 
     .labelFormulario {
