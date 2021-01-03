@@ -13,24 +13,9 @@
     --blanco80: rgba(255, 255, 255, 0.8);
     
     /* Font/text values */
-    --unnamed-font-family-ibm-plex-sans:'IBM Plex Sans', sans-serif;
-    --unnamed-font-family-aestetico-informal:'Aestetico Informal';
-    --unnamed-font-style-italic: italic;
-    --unnamed-font-style-normal: normal;
-    --unnamed-font-style-bold: bold;
-    --unnamed-font-weight-300: 300px;
-    --unnamed-font-weight-600: 600px;
-    --unnamed-font-weight-800: 800px;
-    --unnamed-font-weight-bold: bold;
-    --unnamed-font-size-13: 13px;
-    --unnamed-font-size-18: 18px;
-    --unnamed-font-size-20: 20px;
-    --unnamed-font-size-22: 22px;
-    --unnamed-font-size-25: 25px;
-    --unnamed-font-size-40: 40px;
-    --unnamed-font-size-120: 120px;
-    --unnamed-character-spacing-0: 0px;
-    
+    --fuenteParrafos:'IBM Plex Sans', sans-serif;
+    --fuenteTitulos:'Aestetico Informal';
+        
     }
     
 .contenidoLandingPage {
@@ -44,32 +29,26 @@
 .cajonIzquierdo {
 
     flex: 1;
-    margin-top: 3%;
-    margin-left: 10%;
-    margin-right: 0%;
-    padding: 30px 40px 40px 40px;
-    background-color: none;
-    width: 672px;;
+    margin: 3% 10% 0% 10%;
     min-width: 500px;
-    max-width: 672px;
-    
-            
+    max-width: 80%;
+    padding: 30px 40px 40px 40px;
+    width: 672px;;
+                  
 }
 
 .cajonDerecho {
 
-    flex:2;
-    margin-top: 3%;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding: 30px 40px 40px 40px;
     background-color: var(--blanco80);
     border-radius: 10px;
+    flex:2;
     left:35%;
-    min-width: 300px;
+    margin: 3% 10% 0% 10%;
     max-width: 672px;;
+    min-width: 300px;
     min-height: 500px;
-   
+    padding: 30px 40px 40px 40px;
+      
 }
   
 /* Atributos Titulo Principal: */
@@ -77,34 +56,32 @@
     #logoTituloLanding {
         top:150px;
         left:55px;
-        margin:auto;
         max-width: 400px;
         transition: 1.0s;        
         }
      
     #accion {
-        font-family: var(--unnamed-font-family-aestetico-informal);
-        font-style: var(--unnamed-font-style-normal);
-        font-weight: var(--unnamed-font-weight-bold);
-        font-size: var(--unnamed-font-size-40);
-        line-height: 0px;
-        letter-spacing: var(--unnamed-character-spacing-0);
+        text-align: left;
+        font-family: var(--fuenteTitulos);
+        font-weight: bold;
+        font-size: 60px;
         color: var(--negro);
+        line-height: 50px;
         transition: 1.0s;
-        padding-left: 350px;
+        top: -5px;
         }
 
     #donde {
         
-        text-align: right;
-        font-family: var(--unnamed-font-family-aestetico-informal);
-        font-style: var(--unnamed-font-style-normal);
-        font-weight: var(--unnamed-font-weight-bold);
-        font-size: var(--unnamed-font-size-120);
-        line-height: 150px;
-        letter-spacing: var(--unnamed-character-spacing-0);
+        font-family: var(--fuenteTitulos);     
+        font-size: 120px;
+        font-weight: bold;
+        letter-spacing:-5px;
+        line-height: 100px;
         color: var(--negro);
-        transition: 1.5s
+        transition: 1.5s;
+        text-align: right;
+        top: -5px;
         }
     
    
@@ -113,12 +90,11 @@
 
 
     #invitacion {
-        font-family: var(--unnamed-font-family-ibm-plex-sans);
-        font-style: var(--unnamed-font-style-italic);
-        font-weight: var(--unnamed-font-weight-600);
-        font-size: var(--unnamed-font-size-18);
+        font-family: var(--fuenteParrafos);
+        font-style: italic;
+        font-weight: 600px;
+        font-size: 18px;
         line-height: 25px;
-        letter-spacing: var(--unnamed-character-spacing-0);
         color: var(--naranja);
         align-content: flex-end;
         background-color: var(--blanco50)
@@ -132,10 +108,10 @@
     .dato_registro{
         background: none;
         color: var(--negro);
-        font-family: var(--unnamed-font-family-ibm-plex-sans);
-        font-style: var(--unnamed-font-style-bold);
-        font-weight: var(--unnamed-font-weight-bold);
-        font-size: var(--unnamed-font-size-22);
+        font-family: var(--fuenteParrafos);
+        font-style: bold;
+        font-weight: bold;
+        font-size: 22px;
         padding:10px 10px 0px 0px;
         width: 100%;
         border: none;
@@ -149,22 +125,20 @@
 
     .label_form {
         padding-bottom: 10px;
-        font-family: var(--unnamed-font-family-ibm-plex-sans);
-        font-style: var(--unnamed-font-style-italic);
-        font-weight: var(--unnamed-font-weight-300);
-        font-size: var(--unnamed-font-size-18);
-        line-height: var(--unnamed-line-spacing-19);
-        letter-spacing: var(--unnamed-character-spacing-0);
+        font-family: var(--fuenteParrafos);
+        font-style: italic;
+        font-weight: 300px;
+        font-size: 18px;
+        line-height: 19px;
         color: var(--naranja);  
         }
 
     .Boton_Registrarme {
         background-color: var(--naranja);
-        font-family: var(--unnamed-font-family-aestetico-informal);
-        font-weight: var(--unnamed-font-weight-bold);
-        font-size: var(--unnamed-font-size-20);
-        line-height: var(--unnamed-line-spacing-29);
-        letter-spacing: var(--unnamed-character-spacing-0);
+        font-family: var(--fuenteTitulos);
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 29px;
         color: var(--blanco);
         padding: 10px 10px 10px 10px;
         width: 80%;
