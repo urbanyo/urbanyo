@@ -18,10 +18,10 @@
 
     /* Dimensions */
 
-    --anchoMaxCajaMensajePrincipal: 600px;
-    --anchoMinCajaMensajePrincipal: 450px;
-    --anchoMaxCajaFormulario: 600px;
-    --anchoMinCajaFormulario: 450px;
+    --anchoMaxCajaMensajePrincipal: 700px;
+    --anchoMinCajaMensajePrincipal: 400px;
+    --anchoMaxCajaFormulario: 700px;
+    --anchoMinCajaFormulario: 400px;
             
       }
     
@@ -36,7 +36,7 @@
 
 .cajaMensajePrincipal {
     flex: 1;
-    margin: 3% 5% 0% 5%;
+    margin: 3% 8% 0% 8%;
     min-width: 400px;
     padding: 30px 40px 40px 40px;
     max-width: var(--anchoMaxCajaMensajePrincipal);
@@ -84,7 +84,7 @@
     flex:2;
     background-color: var(--blanco80);
     border-radius: 10px;
-    margin: 3% 5% 0% 5%;
+    margin: 3% 8% 0% 8%;
     max-width: var(--anchoMaxCajaFormulario);
     min-width: var(--anchoMinCajaFormulario);
     min-height: 500px;
@@ -140,8 +140,8 @@
         background-color: var(--naranja);
         font-family: var(--fuenteTitulos);
         font-weight: bold;
-        font-size: 20px;
-        line-height: 29px;
+        font-size: 35px;
+        line-height: 38px;
         color: var(--blanco);
         padding: 10px 10px 10px 10px;
         width: 80%;
