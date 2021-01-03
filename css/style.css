@@ -33,12 +33,15 @@
     
     }
     
-.flex-container {
+.contenidoLandingPage {
     
     display: flex; 
     flex-wrap: wrap; 
 }
-.izquierda {
+
+/* Atributos cajas de información */
+
+.cajonIzquierdo {
 
     flex: 1;
     margin-left: 10%;
@@ -49,10 +52,10 @@
     min-width: 500px;
     max-width: 672px;
     margin-top: 3%;
-    
-        
+            
 }
-.derecha {
+
+.cajonDerecho {
 
     flex:2;
     margin-top: 3%;
@@ -70,17 +73,15 @@
   
 /* Atributos Titulo Principal: */
 
-    #logo_titulo {
-        
+    #logoTituloLanding {
         top:150px;
         left:55px;
         margin:auto;
         max-width: 400px;
-        transition: 1.0s;
-        
-    }
+        transition: 1.0s;        
+        }
      
-    #transforma {
+    #palabraTransforma {
         font-family: var(--unnamed-font-family-aestetico-informal);
         font-style: var(--unnamed-font-style-normal);
         font-weight: var(--unnamed-font-weight-bold);
@@ -91,7 +92,8 @@
         transition: 1.0s;
         padding-left: 350px;
         }
-    #Medellin {
+
+    #palabraMedellin {
         padding-left: 200px;
         font-family: var(--unnamed-font-family-aestetico-informal);
         font-style: var(--unnamed-font-style-normal);
@@ -109,23 +111,21 @@
 
 
     #invitacion {
-    font-family: var(--unnamed-font-family-ibm-plex-sans);
-    font-style: var(--unnamed-font-style-italic);
-    font-weight: var(--unnamed-font-weight-600);
-    font-size: var(--unnamed-font-size-18);
-    line-height: 25px;
-    letter-spacing: var(--unnamed-character-spacing-0);
-    color: var(--naranja);
-    align-content: flex-end;
-    background-color: var(--blanco50)
-    
-    
-}
+        font-family: var(--unnamed-font-family-ibm-plex-sans);
+        font-style: var(--unnamed-font-style-italic);
+        font-weight: var(--unnamed-font-weight-600);
+        font-size: var(--unnamed-font-size-18);
+        line-height: 25px;
+        letter-spacing: var(--unnamed-character-spacing-0);
+        color: var(--naranja);
+        align-content: flex-end;
+        background-color: var(--blanco50)
+        }
 
     .formulario_registro{
         min-width: 100%;
         transition: 1.0s;
-    }
+        }
 
     .dato_registro{
         background: none;
@@ -138,7 +138,7 @@
         width: 100%;
         border: none;
         border-bottom: 1px solid var(--naranja)
-    }
+        }
 
     .dato_registro:focus {
         outline: none;
@@ -154,7 +154,7 @@
         line-height: var(--unnamed-line-spacing-19);
         letter-spacing: var(--unnamed-character-spacing-0);
         color: var(--naranja);  
-    }
+        }
 
     .Boton_Registrarme {
         background-color: var(--naranja);
@@ -171,16 +171,4 @@
         margin-top: 5%;
         margin-left: 10%;
         cursor: pointer;
-     }
-
-
-
-
-    
-
-
-    
-
-  
-
-   
+        }
