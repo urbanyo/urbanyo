@@ -18,10 +18,10 @@
 
     /* Dimensions */
 
-    --anchoMaxCajaMensajePrincipal: 700px;
-    --anchoMinCajaMensajePrincipal: 500px;
-    --anchoMaxCajaFormulario: 700px;
-    --anchoMinCajaFormulario: 500px;
+    --anchoMaxCajaMensajePrincipal: 600px;
+    --anchoMinCajaMensajePrincipal: 450px;
+    --anchoMaxCajaFormulario: 600px;
+    --anchoMinCajaFormulario: 450px;
             
       }
     
@@ -85,6 +85,7 @@
     background-color: var(--blanco80);
     border-radius: 10px;
     margin: 3% 5% 0% 5%;
+    max-width: var(--anchoMaxCajaFormulario);
     min-width: var(--anchoMinCajaFormulario);
     min-height: 500px;
     padding: 30px 40px 40px 40px;
@@ -113,7 +114,7 @@
         color: var(--negro);
         font-family: var(--fuenteParrafos);
         font-weight: bold;
-        font-size: 22px;
+        font-size: 28px;
         padding:10px 10px 0px 0px;
         width: 100%;       
         border: none;
