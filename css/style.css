@@ -47,7 +47,7 @@
     background-color: var(--blanco80);
     border-radius: 10px;
     left:35%;
-    margin: 3% 10% 0% 10%;
+    margin: 3% 5% 0% 5%;
     min-width: 400px;
     min-height: 500px;
     padding: 30px 40px 40px 40px;
@@ -69,14 +69,14 @@
         font-size: 60px;
         font-weight: bold;
         color: var(--negro);    
-        line-height: 50px;
+        line-height: 20px;
         transition: 1.0s;
-        padding: 0% 0% 0% 0%;
+        padding: 0% 20% 0% 0%;
         text-align-last: center;
         max-width: var(--anchoMaxCajaMensajePrincipal)
         }
 
-    #donde {
+    #dondeAccion {
         
         font-family: var(--fuenteTitulos);     
         font-size: 100px;
@@ -95,7 +95,7 @@
 /* Atributos Formulario */
 
 
-    #invitacion {
+    #ExplicacionPorQueRegistrarse {
         font-family: var(--fuenteParrafos);
         font-style: italic;
         font-weight: 600px;
@@ -106,7 +106,7 @@
         background-color: var(--blanco50)
         }
 
-    .formulario_registro{
+    .formularioRegistro{
         min-width: 100%;
         transition: 1.0s;
         }
