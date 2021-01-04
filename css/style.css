@@ -59,55 +59,35 @@
 .formularioRegistro {
     flex:2;
     font-family: var(--fuenteParrafos);
-    font-style: italic;
+    font-size: 28px;
     background-color: var(--blanco80);
-    margin: auto;
+    margin: 3% auto auto auto;
     max-width: var(--anchoMaxCajaFormulario);
     min-width: var(--anchoMinCajaFormulario);
-    min-height: 500px;
-    padding: 30px 60px 30px 60px;
-    /*transition: 1.5s*/
-}
-
-.formularioRegistro_estructura {        
-    min-width: 100%;
+    padding: 60px 60px 60px 60px;    
+    border-radius: 10px; 
 }
 
     .formularioRegistro_invitacion {
-        font-size: 28px;
-        font-style: normal;
+        
         line-height: 30px;
         color: var(--naranja);
-        padding: 0px 0px 30px 0px;
         max-height: 150px;
-        justify-content: center;
+        margin-bottom: 30px; 
     }  
-
-    .formularioRegistro_datoUsuario {
-        padding: 20px 0px 0px 0px;
-        font-size: 20;
-    }
-
-    /*.formularioRegistro_label {
-        padding: 20px 0px 0px 0px;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 35px;
-        color: var(--naranja); 
-    }   */
-
-    .formularioRegistro_casillaEscritura {
+     
+    .formularioRegistro_casilla {
         background: var(--grisclaro);
         color: var(--negro);
-        font-weight: bold;
-        font-size: 28px;
-        padding:3px 3px 3px 3px;
-        width: 100%;       
+        margin:15px auto 15px auto;
+        padding:10px 10px 10px 10px;
+        width: 98%;       
         border: none;
-        box-shadow: rgb(226, 102, 92) 25px;
+        border-radius: 10px;  
+        font-size: 28px;      
     }
 
-    .formularioRegistro_casillaEscritura:focus {
+    .formularioRegistro_casilla:focus {
         outline: none;
         color: var(--negro);
     }
