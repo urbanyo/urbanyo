@@ -9,16 +9,15 @@
     --blanco80: rgba(255, 255, 255, 0.8);
     --naranja: rgb(226, 102, 92);
     --naranja50: rgb(226, 102, 92, 0.5);
-    --grisclaro: rgb(221, 221, 221);
+    --grisclaro:rgb(232, 240, 254);
     --negro: rgb(0, 0, 0);
         
     --fuenteParrafos:'IBM Plex Sans', sans-serif;
     --fuenteTitulos:'Aestetico Informal';
 
     --anchoMaxCajaMensajePrincipal: 700px;
-    --anchoMinCajaMensajePrincipal: 400px;
     --anchoMaxCajaFormulario: 700px;
-    --anchoMinCajaFormulario: 400px;    
+    --anchoMinCajaFormulario: 400px;   
 }
     
 /* Contenido Responsive */
@@ -29,14 +28,16 @@
 
 .contenidoLandingPage {    
     display: flex; 
-    flex-wrap: wrap;  
+    flex-wrap: wrap; 
+    max-height: 100%;
+    margin: 2% 5%; 
 }
 
 /* Elementos de mensaje principal */
 
 .mensajePrincipal {
     flex: 1;
-    margin: 3% auto 0% auto;
+    margin: 0% auto;
     min-width: 400px;
     font-family: var(--fuenteParrafos);
     font-size: 50px;
@@ -45,10 +46,8 @@
     letter-spacing:0px;
     padding: 30px 40px 40px 40px;
     max-width: var(--anchoMaxCajaMensajePrincipal);
-    min-width: var(--anchoMinCajaMensajePrincipal);  
-    align-items: right;                 
+                
 }
-    
     .mensajePrincipal_eslogan {    
         max-height: 300px;
         text-align: center;
@@ -60,30 +59,31 @@
     flex:2;
     font-family: var(--fuenteParrafos);
     font-size: 28px;
-    background-color: var(--blanco80);
-    margin: 3% auto auto auto;
+    background-color: white;
+    margin: auto;
     max-width: var(--anchoMaxCajaFormulario);
     min-width: var(--anchoMinCajaFormulario);
-    padding: 60px 60px 60px 60px;    
-    border-radius: 30px; 
+    padding: 60px ;    
+    border-radius: 8px;  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1)
 }
 
-    .formularioRegistro_invitacion {
-        
+    .formularioRegistro_invitacion {  
         line-height: 30px;
         color: var(--naranja);
-        max-height: 150px;
+        max-height: 150px; 
     }  
      
     .formularioRegistro_casilla {
         background: var(--grisclaro);
         color: var(--negro);
         margin:15px auto 15px auto;
-        padding:10px 10px 10px 10px;
-        width: 98%;       
+        padding: 2% 5%;
+        width: 90%;       
         border: none;
-        border-radius: 30px;  
-        font-size: 28px;      
+        border-radius: 6px;  
+        font-size: 28px;
+        border: 1px solid #dddfe2;
     }
 
     .formularioRegistro_casilla:focus {
@@ -93,12 +93,11 @@
    
     .formularioRegistro_botonEnvioDatos {
         background-color: var(--naranja);
-        font-family: var(--fuenteTitulos);
+        font-family: var(--fuenteParrafos);
         font-weight: bold;
         font-size: 35px;
-        line-height: 38px;
         color: var(--blanco);
-        padding: 10px 10px 10px 10px;
+        padding: 10px;
         width: 70%;
         border: none;
         align-items: center;
