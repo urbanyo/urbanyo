@@ -9,7 +9,7 @@
     --blanco80: rgba(255, 255, 255, 0.8);
     --naranja: rgb(226, 102, 92);
     --naranja50: rgb(226, 102, 92, 0.5);
-    --grisclaro: rgb(202, 202, 202);
+    --grisclaro: rgb(221, 221, 221);
     --negro: rgb(0, 0, 0);
         
     --fuenteParrafos:'IBM Plex Sans', sans-serif;
@@ -65,7 +65,7 @@
     max-width: var(--anchoMaxCajaFormulario);
     min-width: var(--anchoMinCajaFormulario);
     padding: 60px 60px 60px 60px;    
-    border-radius: 10px; 
+    border-radius: 30px; 
 }
 
     .formularioRegistro_invitacion {
@@ -82,7 +82,7 @@
         padding:10px 10px 10px 10px;
         width: 98%;       
         border: none;
-        border-radius: 10px;  
+        border-radius: 30px;  
         font-size: 28px;      
     }
 
@@ -99,9 +99,10 @@
         line-height: 38px;
         color: var(--blanco);
         padding: 10px 10px 10px 10px;
-        width: 60%;
+        width: 70%;
         border: none;
         align-items: center;
         margin: 5% 15% 0 15%;
         cursor: pointer;
+        border-radius: 30px; 
     }
