@@ -15,15 +15,25 @@
     --fuenteParrafos:'IBM Plex Sans', sans-serif;
     --fuenteTitulos:'Aestetico Informal';
 
-    --anchoMaxCajaMensajePrincipal: 700px;
-    --anchoMaxCajaFormulario: 700px;
-    --anchoMinCajaFormulario: 400px;   
+    --anchoMaxCajaMensajePrincipal: 800px;
+    --anchoMaxCajaFormulario: 600px;
+    --anchoMinCajaFormulario: 400px;
+    --anchoMinCajaMensajePrincipal: 600px;   
 }
     
 /* Contenido Responsive */
 
 .bodyLandingPage {
-    background: url(../img/Fondo.png) no-repeat center / cover fixed;
+    /*background: url(../img/Fondo.png) no-repeat center / cover fixed;*/
+    background:linear-gradient(90deg,#ffdfb6, #e6e0d9 , #cbf5ff, #e6e0d9,#ffdfb6);
+    background-size: 400%;
+    animation: bg-animation 10s infinite;   
+    height: 100%;
+}
+
+@keyframes bg-animation {
+    0% {background-position: left;}
+    100% {background-position: right;}
 }
 
 .contenidoLandingPage {    
@@ -35,7 +45,7 @@
 
 /* Elementos de mensaje principal */
 
-.mensajePrincipal {
+.mensajeIlustracion {
     flex: 1;
     margin: 0% auto;
     min-width: 400px;
@@ -46,13 +56,19 @@
     letter-spacing:0px;
     padding: 30px 40px 40px 40px;
     max-width: var(--anchoMaxCajaMensajePrincipal);
+    min-width: var(--anchoMinCajaMensajePrincipal);
+    align-content: center;
                 
 }
     .mensajePrincipal_eslogan {    
         max-height: 300px;
         text-align: center;
     }
-
+    
+    .ilustracionPrincipal{
+        margin: auto;       
+    }
+        
 /* Elementos de Formulario de Registro */
 
 .formularioRegistro {
@@ -60,12 +76,12 @@
     font-family: var(--fuenteParrafos);
     font-size: 28px;
     background-color: white;
-    margin: auto;
+    margin:auto auto;
     max-width: var(--anchoMaxCajaFormulario);
     min-width: var(--anchoMinCajaFormulario);
     padding: 60px ;    
     border-radius: 8px;  
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1)
+    box-shadow: 0 2px 4px #0000001a, 0 8px 16px #0000001a
 }
 
     .formularioRegistro_invitacion {  
@@ -80,15 +96,16 @@
         margin:15px auto 15px auto;
         padding: 2% 5%;
         width: 90%;       
-        border: none;
         border-radius: 6px;  
         font-size: 28px;
-        border: 1px solid #dddfe2;
+        border: 3px solid #dddfe2;
     }
 
     .formularioRegistro_casilla:focus {
         outline: none;
         color: var(--negro);
+        border: 3px solid #4856df;
+        font-weight: bold;
     }
    
     .formularioRegistro_botonEnvioDatos {
@@ -103,5 +120,24 @@
         align-items: center;
         margin: 5% 15% 0 15%;
         cursor: pointer;
-        border-radius: 30px; 
+        border-radius: 6px; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1)
     }
+
+    .formularioRegistro_botonEnvioDatos:hover {
+        background-color: #4856df; 
+        transition: 0.5s;
+        width: 80%;
+        margin: 5% 10% 0 10%;
+    }
+
+    .formularioRegistro_botonEnvioDatos:focus {
+        background-color: #4856df; 
+        transition: 0.5s;
+        width: 80%;
+        margin: 5% 10% 0 10%;
+    }
+
+    
+
+    
