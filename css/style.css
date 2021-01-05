@@ -17,8 +17,9 @@
 
     --anchoMaxCajaMensajePrincipal: 600px;
     --anchoMinCajaMensajePrincipal: 500px;  
-    --anchoMaxCajaFormulario: 400px;
+    --anchoMaxCajaFormulario: 600px;
     --anchoMinCajaFormulario: 300px;
+    
 }
     
 /* Contenido Responsive */
@@ -73,6 +74,7 @@
     margin:auto auto;
     max-width: var(--anchoMaxCajaFormulario);
     min-width: var(--anchoMinCajaFormulario);
+    
     padding: 50px ;    
     border-radius: 8px;  
     box-shadow: 0 2px 4px #0000001a, 0 8px 16px #0000001a
