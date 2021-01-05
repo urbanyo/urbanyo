@@ -26,14 +26,8 @@
 .bodyLandingPage {
     /*background: url(../img/Fondo.png) no-repeat center / cover fixed;*/
     background:linear-gradient(90deg,#ffdfb6, #e6e0d9 , #cbf5ff, #e6e0d9,#ffdfb6);
-    background-size: 400%;
-    animation: bg-animation 10s infinite;   
+    background-size: 400%; 
     height: 100%;
-}
-
-@keyframes bg-animation {
-    0% {background-position: left;}
-    100% {background-position: right;}
 }
 
 .contenidoLandingPage {    
