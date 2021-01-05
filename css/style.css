@@ -69,7 +69,7 @@
 .formularioRegistro {
     flex:2;
     font-family: var(--fuenteParrafos);
-    font-size: 23px;
+    font-size: 25px;
     background-color: white;
     margin:auto auto;
     max-width: var(--anchoMaxCajaFormulario);
@@ -85,17 +85,17 @@
         color: var(--naranja);
         max-height: 150px; 
         text-align: justify;
-        margin-bottom: 5%;
+        margin: 0 5% 5% 5%;
     }  
      
     .formularioRegistro_casilla {
+        font-size: 25px;
         background: var(--grisclaro);
         color: var(--negro);
         margin:8px auto ;
         padding: 3% 5%;
         width: 90%;       
         border-radius: 6px;  
-        font-size: 20px;
         border: 2px solid #dddfe2;
         letter-spacing: 1px;
     }
