@@ -37,7 +37,7 @@
 .contenidoLandingPage {    
     display: flex; 
     flex-wrap: wrap; 
-    margin: 10% 3%; 
+    margin: 2% 3%; 
 }
 
 /* Mensaje principal */
@@ -132,6 +132,10 @@
         }
 
     @media screen and (max-width: 1144px) {
+
+        .contenidoLandingPage {    
+            margin: 10% 3%; 
+        }
 
         .mensajeIlustracion {
             margin-bottom: 0px;
