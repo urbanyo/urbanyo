@@ -56,7 +56,8 @@
     align-content: center;
     text-align: center;               
 }
-    .mensajePrincipal_logo {    
+    .mensajePrincipal_logo {  
+        padding-top: 8%;  
         max-height: 150px;
     }
 
@@ -145,6 +146,7 @@
 
         .mensajePrincipal_logo {    
             max-height: 180px;
+            padding-top: 0px;
         }
         
         .formularioRegistro {
