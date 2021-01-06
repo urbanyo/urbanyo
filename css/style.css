@@ -7,12 +7,13 @@
     
     --naranja: #e2665c;
     --grisbordes:#dddfe2;
-    --crema:#e6e0d9;
-    --azul:#00cbcb;
+    --crema:#f1eeea;
+    --azul:#003e83;
 
     --gradienteFondo:linear-gradient(90deg,#ffe5c4, #e6e0d9 , #cbf5ff );
 
     --sombra:0 2px 4px #0000001a, 0 8px 16px #0000001a;
+    --sombranaranja:0 2px 4px #e2635a33, 0 8px 10px #e2635a33;
         
     --fuenteParrafos:'IBM Plex Sans', sans-serif;
     --fuenteTitulos:'Aestetico Informal';
@@ -27,8 +28,6 @@
     --anchoMaxCajaFormularioPhone: 700px;
 }
     
-/* Contenido Responsive */
-
 .bodyLandingPage {
     background:var(--gradienteFondo);
     background-size: 200%; 
@@ -71,13 +70,14 @@
     flex:2;
     font-family: var(--fuenteParrafos);
     font-size: 23px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.692);
     margin: auto;
     max-width: var(--anchoMaxCajaFormularioWeb);
     min-width: var(--anchoMinCajaFormularioWeb);
     padding: 50px ;    
-    border-radius: 8px;  
-    box-shadow:var(--sombra)
+    border-radius: 15px;  
+    box-shadow:var(--sombra);
+    border: 2px solid var(--grisbordes);
 }
 
     .formularioRegistro_invitacion {  
@@ -89,8 +89,7 @@
      
     .formularioRegistro_casilla {
         font-size: 20px;
-        background: var(--crema);
-        color: black;
+        background: white;
         margin:8px auto ;
         padding: 3% 5%;
         width: 90%;       
@@ -100,9 +99,9 @@
     }
 
         .formularioRegistro_casilla:focus {
-            outline: none;
-            color: var(--negro);
             border: 2px solid var(--naranja);
+            box-shadow:var(--sombranaranja);
+            outline: none;
         }
    
     .formularioRegistro_botonEnvioDatos {
@@ -112,9 +111,9 @@
         font-size: 28px;
         color: white;
         padding: 10px;
-        width: 60%;
+        width: 50%;
         border: none;
-        margin: 5% 20% 0 20%;
+        margin: 5% 25% 0 25%;
         cursor: pointer;
         border-radius: 6px; 
         box-shadow:var(--sombra);
@@ -123,16 +122,17 @@
         .formularioRegistro_botonEnvioDatos:hover {
             background-color:var(--azul); 
             transition: 0.5s;
-            width: 50%;
-            margin: 5% 25% 0 25%;
+            width: 60%;
+            margin: 5% 20% 0 20%;
         }
 
         .formularioRegistro_botonEnvioDatos:focus {
             background-color:var(--azul); 
             transition: 0.5s;
+            outline: none;
         }
 
-    @media screen and (max-width: 1144px) {
+@media screen and (max-width: 1144px) {
 
         .contenidoLandingPage {    
             margin: 10% 3%; 
@@ -160,6 +160,5 @@
 
         .formularioRegistro_botonEnvioDatos {
             font-size: 40px;
-
-    
+        }
     }
