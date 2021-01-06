@@ -4,138 +4,154 @@
 }
 
 :root {
-    --blanco: #ffffff;
-    --blanco50: #ffffff80;
-    --blanco80: #ffffffcc;
+    
     --naranja: #e2665c;
-    --naranja50: #e2665c80;
-    --grisclaro:#e8f0fe;
-    --negro: #000000;
+    --grisbordes:#dddfe2;
+    --crema:#e6e0d9;
+    --azul:#00cbcb;
+
+    --gradienteFondo:linear-gradient(90deg,#ffe5c4, #e6e0d9 , #cbf5ff );
+
+    --sombra:0 2px 4px #0000001a, 0 8px 16px #0000001a;
         
     --fuenteParrafos:'IBM Plex Sans', sans-serif;
     --fuenteTitulos:'Aestetico Informal';
 
-    --anchoMaxCajaMensajePrincipal: 600px;
-    --anchoMinCajaMensajePrincipal: 500px;  
-    --anchoMaxCajaFormulario: 600px;
-    --anchoMinCajaFormulario: 300px;
-    
+    --anchoMaxCajaMensajePrincipalWeb: 800px;
+    --anchoMinCajaMensajePrincipalWeb: 600px;  
+    --anchoMaxCajaFormularioWeb: 500px;
+    --anchoMinCajaFormularioWeb: 300px;  
+
+    --anchoMaxCajaMensajePrincipalPhone: 800px;
+    --anchoMinCajaMensajePrincipalPhone: 800px; 
+    --anchoMaxCajaFormularioPhone: 700px;
 }
     
 /* Contenido Responsive */
 
 .bodyLandingPage {
-    /*background: url(../img/Fondo.png) no-repeat center / cover fixed;*/
-    background:linear-gradient(90deg,#ffdfb6, #e6e0d9 , #cbf5ff, #e6e0d9,#ffdfb6);
-    background-size: 300%; 
-    height: 100%;
+    background:var(--gradienteFondo);
+    background-size: 200%; 
 }
 
 .contenidoLandingPage {    
     display: flex; 
     flex-wrap: wrap; 
-    max-height: 100%;
-    margin: 2% 5%; 
+    margin: 2% 3%; 
 }
 
-/* Elementos de mensaje principal */
+/* Mensaje principal */
 
 .mensajeIlustracion {
     flex: 1;
-    margin: 0% auto;
-    min-width: 400px;
+    margin: 20px auto 0px auto;
     font-family: var(--fuenteParrafos);
     font-size: 35px;
     font-weight: bold;
-    color: var(--negro);
+    color: black;
     letter-spacing:1px;
-    padding: 30px 40px 40px 40px;
-    max-width: var(--anchoMaxCajaMensajePrincipal);
-    min-width: var(--anchoMinCajaMensajePrincipal);
+    padding: 30px 30px 0px 30px;
+    max-width: var(--anchoMaxCajaMensajePrincipalWeb);
+    min-width: var(--anchoMinCajaMensajePrincipalWeb);
     align-content: center;
-                
+    text-align: center;               
 }
-    .mensajePrincipal_eslogan {    
-        max-height: 300px;
-        text-align: center;
+    .mensajePrincipal_logo {    
+        max-height: 150px;
     }
-    
+
     .ilustracionPrincipal{
-        margin: auto;       
+        margin: 30px 50px;    
     }
         
-/* Elementos de Formulario de Registro */
+/* Formulario de Registro */
 
 .formularioRegistro {
     flex:2;
     font-family: var(--fuenteParrafos);
-    font-size: 25px;
+    font-size: 23px;
     background-color: white;
-    margin:auto auto;
-    max-width: var(--anchoMaxCajaFormulario);
-    min-width: var(--anchoMinCajaFormulario);
-    
+    margin: auto;
+    max-width: var(--anchoMaxCajaFormularioWeb);
+    min-width: var(--anchoMinCajaFormularioWeb);
     padding: 50px ;    
     border-radius: 8px;  
-    box-shadow: 0 2px 4px #0000001a, 0 8px 16px #0000001a
+    box-shadow:var(--sombra)
 }
 
     .formularioRegistro_invitacion {  
-        line-height: 25px;
         color: var(--naranja);
         max-height: 150px; 
-        text-align: justify;
+        text-align: center;
         margin: 0 5% 5% 5%;
     }  
      
     .formularioRegistro_casilla {
-        font-size: 25px;
-        background: var(--grisclaro);
-        color: var(--negro);
+        font-size: 20px;
+        background: var(--crema);
+        color: black;
         margin:8px auto ;
         padding: 3% 5%;
         width: 90%;       
         border-radius: 6px;  
-        border: 2px solid #dddfe2;
+        border: 2px solid var(--grisbordes);
         letter-spacing: 1px;
     }
 
-    .formularioRegistro_casilla:focus {
-        outline: none;
-        color: var(--negro);
-        border: 2px solid #e2665c;
-    }
+        .formularioRegistro_casilla:focus {
+            outline: none;
+            color: var(--negro);
+            border: 2px solid var(--naranja);
+        }
    
     .formularioRegistro_botonEnvioDatos {
         background-color: var(--naranja);
-        font-family: var(--fuenteParrafos);
+        font-family: var(--fuenteParrafos) ;
         font-weight: bold;
-        font-size: 30px;
-        color: var(--blanco);
+        font-size: 28px;
+        color: white;
         padding: 10px;
-        width: 70%;
+        width: 60%;
         border: none;
-        align-items: center;
-        margin: 5% 15% 0 15%;
+        margin: 5% 20% 0 20%;
         cursor: pointer;
         border-radius: 6px; 
-        box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1)
+        box-shadow:var(--sombra);
     }
 
-    .formularioRegistro_botonEnvioDatos:hover {
-        background-color: #4856df; 
-        transition: 0.5s;
-        width: 80%;
-        margin: 5% 10% 0 10%;
-    }
+        .formularioRegistro_botonEnvioDatos:hover {
+            background-color:var(--azul); 
+            transition: 0.5s;
+            width: 50%;
+            margin: 5% 25% 0 25%;
+        }
 
-    .formularioRegistro_botonEnvioDatos:focus {
-        background-color: #4856df; 
-        transition: 0.5s;
-        width: 80%;
-        margin: 5% 10% 0 10%;
-    }
+        .formularioRegistro_botonEnvioDatos:focus {
+            background-color:var(--azul); 
+            transition: 0.5s;
+        }
+
+    @media screen and (max-width: 1144px) {
+
+        .mensajeIlustracion {
+            margin-top: 50px;
+            margin-bottom: 0px;
+            max-width: var(--anchoMaxCajaMensajePrincipalPhone); 
+            font-size: 50px;             
+        }
+
+        .mensajePrincipal_logo {    
+            max-height: 180px;
+        }
+        
+        .formularioRegistro {
+            max-width: var(--anchoMaxCajaFormularioPhone);
+            font-size: 30px;
+        }
+
+        .formularioRegistro_casilla {
+            font-size: 30px; 
+        }
 
     
-
-    
+    }
