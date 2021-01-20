@@ -8,7 +8,7 @@
         "../scss/components/_fonts.scss",
         "../scss/components/_widths.scss",
         "../scss/general/_footer.scss",
-        "../scss/sections_index/_bodyIndex.scss",
+        "../scss/sections_index/_indexBody.scss",
         "../scss/sections_index/_mainmessage.scss",
         "../scss/sections_index/_formLogin.scss"
     ],
