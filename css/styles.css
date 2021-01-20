@@ -63,11 +63,11 @@ ul { list-style: none; }
 
 .formLogin_input:focus { font-family: "Poppins"; border: 2px solid #e2665c; box-shadow: 0 2px 4px #e2635a33, 0 8px 10px #e2635a33; outline: none; }
 
-.formLogin_sendButton { background-color: #e2665c; font-family: "Poppins"; font-weight: bold; font-size: 24px; color: #ffffff; padding: 10px; width: 100%; border: none; margin-top: 8px; cursor: pointer; border-radius: 6px; box-shadow: 0 2px 4px #0000001a, 0 8px 16px #0000001a; }
+.formLogin_loginButton { background-color: #e2665c; font-family: "Poppins"; font-weight: bold; font-size: 24px; color: #ffffff; padding: 10px; width: 100%; border: none; margin-top: 8px; cursor: pointer; border-radius: 6px; box-shadow: 0 2px 4px #0000001a, 0 8px 16px #0000001a; }
 
-.formLogin_sendButton:hover { background-color: #c44d44; transition: 0.5s; }
+.formLogin_loginButton:hover { background-color: #c44d44; transition: 0.5s; }
 
-.formLogin_sendButton:focus { background-color: #000000; transition: 0.5s; outline: none; }
+.formLogin_loginButton:focus { background-color: #003e83; transition: 0.5s; outline: none; }
 
 .formLogin_resetPassword { font-size: 16px; margin: 5% auto 0% auto; text-align: center; }
 
@@ -79,7 +79,7 @@ ul { list-style: none; }
 
 @media screen and (max-width: 1184px) { .formLogin { max-width: 800px; min-width: 800px; font-size: 35px; margin: 2% auto; }
   .formLogin_input { font-size: 35px; }
-  .formLogin_sendButton { font-size: 40px; }
+  .formLogin_loginButton { font-size: 40px; }
   .formLogin_resetPassword { font-size: 28px; color: #c44d44; }
   .formLogin_inviteRegister { font-size: 23px; }
   .formLogin_inviteRegister a { font-size: 28px; } }
