@@ -1,0 +1,15 @@
+{
+  "name": "urbanyo",
+  "version": "1.0.0",
+  "description": "Construir plataforma web de herramientas para la autoconstrucción",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "urbanyo",
+    "developer"
+  ],
+  "author": "Jhon Arbelaez <hola@urbanyo.com>",
+  "license": "ISC"
+}
