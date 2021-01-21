@@ -27,7 +27,7 @@ ul { list-style: none; }
 .indexFooter_socialLinks a:hover { color: #c44d44; background-color: #ffffff; }
 
 /*responsive*/
-@media screen and (max-width: 1223px) { .indexFooter { position: relative; }
+@media screen and (max-width: 1223px) { .indexFooter { position: relative; padding: 5% 0%; }
   .indexFooter_socialLinks a { height: 80px; width: 80px; font-size: 40px; padding: 20px; } }
 
 /* MAIN */
