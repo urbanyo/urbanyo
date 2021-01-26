@@ -11,5 +11,14 @@
     "developer"
   ],
   "author": "Jhon Arbelaez <hola@urbanyo.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "date-fns": "^2.16.1"
+  },
+  "optionalDependencies": {
+    "eslint": "^7.18.0"
+  }
 }
