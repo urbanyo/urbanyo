@@ -5,7 +5,6 @@
     <meta name="INDEX_URBANYO" content="width=device-width, initial-scale=1.0">
     <title>Urbanyo | logra tu hogar, logra tu sueño.</title>
     <link rel="stylesheet"  href="css/styles.css">
-    <link rel="stylesheet"  href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="icon"  href="img/favicon_urbanyo.ico">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
@@ -14,47 +13,39 @@
 <body>
   <main> 
     <section class="banner">
-      <section class="bannerTitle">    
-        <img class="bannerTitle_logo" src="img/Logo_Urbanyo.svg" alt="Logo Urbanyo" >
-        <div class="bannerTitle_slogan"><h1>logra tu hogar, logra tu sueño.</h1></div>        
-      </section>
+        
+        <img class="logo" src="img/Logo_Urbanyo.svg" alt="Logo Urbanyo" >
+        <div class="slogan"><h1>logra tu hogar, logra tu sueño.</h1></div>        
+      
 
-      <section class="bannerPicture">
-        <img class="bannerPicture_svg" src="img/ilustracion_home.svg" alt="ilustracion usuaria en casa" >
-      </section>
+      
+        <img class="picture" src="img/ilustracion_home.svg" alt="ilustracion usuaria en casa" >
+      
     </section>
 
-    <section class="formLogin">  
+    <section class="login">  
       <form action= "" method="POST"></form>            
-        <input type="text" class="input" placeholder="Usuario" required>    
-        <input type="password" class="input" placeholder="Contraseña" required> 
-        <button type="submit" class="button"> Iniciar Sesión </button>
-        <div class="formLogin_resetPassword"> <a href="linkresetPassword"> ¿Olvidaste tu contraseña? </a></div> 
-        <div class="formLogin_inviteRegister"> Somos la mano amiga para gestionar y construir tu sueño.<br>
-          <a href="formularioRegistro"><b>Regístrate</b></a>  y conoce todo que tenemos para tí. </div>
-        <!-- <input type="text" class="formularioRegistro_input" placeholder="Nombres" required> 
-        <input type="text" class="formularioRegistro_input" placeholder="Apellidos" required>  
-        <input type="email" class="formularioRegistro_input" placeholder="Correo Electrónico" required> 
-        <input type="text"  class="formularioRegistro_input" placeholder="Departamento" required> 
-        <input type="text"  class="formularioRegistro_input" placeholder="Municipio" required> 
-        <input type="text" class="formularioRegistro_input" placeholder="Teléfono" required>   -->
+        <input type="text" class="input" placeholder="Usuario" required> <!--  <i class="fab fa-envelope"></i>   -->  
+        <input type="password" class="input" placeholder="Contraseña" required>  <!-- <i class="fab fa-eye"></i>  -->
+        <button type="submit" class="containedButton"> <h2>Iniciar Sesión</h2> </button>
+        <div class="resetPassword"> 
+          <h4> <a href="linkresetPassword">¿Olvidaste tu contraseña? </a> </h4></div> 
+        <div class="inviteRegister"> 
+          <h4> <a href="formularioRegistro"><b>Regístrate</b></a>  y conoce todo que tenemos para tí.<br> 
+          Somos la mano amiga para construir tu sueño.</h4> </div>
         </form>
     </section>
   </main>
 
-  <footer class="indexFooter">
-    <div class="indexFooter_container">
-      <div class="indexFooter_containerRow">
-        <div class="indexFooter_column">
-          <div class="indexFooter_socialLinks">
-            <a href="https://www.facebook.com/Urbanyo-100702371882816">
-              <i class="fab fa-facebook-f"></i></a>
-            <a href="https://twitter.com/urban_yo">
-              <i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/urban.yo/">
-              <i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/company/69941305/admin/">
-              <i class="fab fa-linkedin-in"></i></a>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <div class="socialLinks">
+            <a href="https://www.facebook.com/Urbanyo-100702371882816"> <i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/urban_yo"> <i class="fab fa-twitter"></i> </a>
+            <a href="https://www.instagram.com/urban.yo/"> <i class="fab fa-instagram"></i> </a>
+            <a href="https://www.linkedin.com/company/69941305/admin/"> <i class="fab fa-linkedin-in"></i> </a>
           </div>
         </div>
       </div>
