@@ -1,0 +1,15 @@
+/* BUTTONS */
+
+button {
+    box-shadow: $shadowneumorphism;
+    background: $concavebutton;
+}
+
+button:hover {
+    box-shadow: $hoverneumorphism;
+}
+  
+button:focus {
+    box-shadow: $hoverneumorphism;
+
+}

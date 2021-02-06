@@ -1,0 +1,34 @@
+$blue:    #356494 !default;
+$brown:   #634947 !default;
+$purple:  #6f42c1 !default;
+$pink:    #F056CD !default;
+$red:     #e35146 !default;
+$orange:  #e2665c !default;
+$yellow:  #e3d074 !default;
+$green:   #209651 !default;
+$teal:    #5de394 !default;
+$cyan:    #4694e3 !default;
+
+
+// scss-docs-start colors-map
+$colors: (
+  "blue":       $blue,
+  "brown":      $brown,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+) !default;
+
+// scss-docs-end colors-map
+
+$primary:       $orange !default;
+$secondary:     $brown !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;

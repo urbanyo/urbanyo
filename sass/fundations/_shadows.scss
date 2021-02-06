@@ -1,0 +1,9 @@
+/* SHADOWS */
+
+$shadowneumorphism: 3px 3px 4px 0 rgba(0, 0, 0, 0.40), -3px -3px 8px 0 rgba(255, 255, 255, 0.1);
+
+$convexbutton: linear-gradient(45deg, rgba(0,0,0,0.2), rgba(255,255,255,0.2));
+
+$concavebutton: linear-gradient(315deg, rgba(0,0,0,0.2), rgba(255,255,255,0.1));
+
+$hoverneumorphism: -4px -4px 12px 0 rgba(255, 255, 255, 0) inset, 3px 3px 6px 0 rgba(0, 0, 0, 0.4) inset;

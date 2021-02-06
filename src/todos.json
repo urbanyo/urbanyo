@@ -1,0 +1,43 @@
+{
+    "todos": [
+        {
+            "title": "Task 1",
+            "responsible": "Leia",
+            "description": "comer muiscas",
+            "priority": "low"
+        },
+        {
+            "title": "Task 2",
+            "responsible": "Jhon",
+            "description": "lavar platos",
+            "priority": "medium"
+        },
+        {
+            "title": "Task 3",
+            "responsible": "Nataia",
+            "description": "pagar cuentas",
+            "priority": "high"
+        },
+        {
+            "title": "Task 4",
+            "responsible": "Mechas",
+            "description": "tejer",
+            "priority": "medium"
+        },
+
+        {
+            "title": "Task 5",
+            "responsible": "Juliano",
+            "description": "regañar",
+            "priority": "medium"
+        },
+        {
+            "title": "Task 6",
+            "responsible": "Kimi",
+            "description": "joder la vida",
+            "priority": "bajita"
+        }
+
+        
+    ]
+}

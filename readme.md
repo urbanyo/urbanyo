@@ -1,2 +1,0 @@
-# urbanyo
-Repositorio plataforma normativa
