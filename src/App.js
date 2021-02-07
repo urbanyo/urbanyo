@@ -2,9 +2,11 @@ import { Component } from 'react';
 import logo from './logo.svg';
 import './css/index.css';
 
-
+// data 
 import {todos} from './todos.json';
-console.log(todos);
+
+//subcomponents
+import Formtask from './components/Formtask';
 
 class App extends Component {
   constructor() {
@@ -12,6 +14,13 @@ class App extends Component {
     this.state = {
       todos
     }
+    this.handleAddTodo = this.handleAddTodo.bind(this)
+  }
+
+  handleAddTodo(todo){
+    this.setState({
+      todos: [...this.state.todos,todo]
+    })
   }
 
   render () {
@@ -25,7 +34,6 @@ class App extends Component {
               <button type="button" class="btn btn-primary text-light border-0">
               {todo.priority} <span class="badge rounded-pill bg-light text-secondary">1</span>
               </button>
-
             </div>
 
             <div className="card-body">
@@ -38,28 +46,33 @@ class App extends Component {
     })
     return (
       <div className="App">
-
-          <nav className="navbar navbar-dark bg-dark" >  
-           <a href="" className="text-white">
+        <nav className="navbar navbar-dark bg-dark" >  
+          <a href="" className="text-white">
             Task
 
-            <span class="badge rounded-pill bg-warning text-dark">
-              {this.state.todos.length}
-            </span>
+          <span class="badge rounded-pill bg-warning text-dark">
+            {this.state.todos.length}
+          </span>
           
-          </a>
-          </nav>
+        </a>
+        </nav>
 
-          <div className="container">
-            <div className="row mt-4">
-              { todos }
+        <div className="container">
+          <div className="row mt-4">
+            <div className="col-md-4 text-center">
+                <img src={logo} className="App-logo" alt="logo" />
+              <Formtask onAddTodo= {this.handleAddTodo}></Formtask>
+            </div>
+
+            <div className="col-md-8">
+              <div className= "row">
+                {todos}
+              </div>
             </div>
           </div>
+        </div>
+       </div>
 
-          <img src={logo} className="App-logo" alt="logo" />
-          <p> logra tu hogar, logra tu sueño. </p>
-          <a className="App-link"  /* href="https://reactjs.org" */ target="_blank" rel="noopener noreferrer" > conoce todo que tenemos para tí. Somos la mano amiga para construir tu sueño. </a>
-      </div>
     );
   }
 }
