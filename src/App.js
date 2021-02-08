@@ -23,22 +23,39 @@ class App extends Component {
     })
   }
 
+  removeTodo(index) {
+    if (window.confirm ('Are you sure you want to delete it?')){
+      this.setState({
+        todos: this.state.todos.filter((e,i) => {
+          return i !== index
+        })
+      })
+    }
+  }
+
   render () {
    const todos = this.state.todos.map((todo,i)=> {
       return (
-        <div className= "col-md-4">
+        <div className= "col-md-4" key={i}>
           <div className="card mt-4">
             <div className="card-header">
               <h3>{todo.title}</h3>
-              
-              <button type="button" class="btn btn-primary text-light border-0">
-              {todo.priority} <span class="badge rounded-pill bg-light text-secondary">1</span>
-              </button>
+              <span  className="badge bg-pill bg-primary ml-2">
+              {todo.priority} 
+              </span>
             </div>
 
             <div className="card-body">
               <p>{todo.description}</p>
               <p><b>{todo.responsible}</b></p>
+            </div>
+            <div className= "card-footer">
+              <button
+                className="btn btn-danger text-light border-0"
+                onClick={this.removeTodo.bind(this, i)}
+              >
+              Delete
+              </button>
             </div>
           </div>
         </div>
